@@ -4,9 +4,9 @@ Offline English-US Android keyboard for Android10 and newer. It works inside exi
 
 Download the APK and full corresponding source ZIP from [Releases](https://github.com/ClownChowder/petal-key/releases). This repository indexes personal preview releases; GitHub's automatic source archives are not the app source. Use the explicitly attached `petal-key-source.zip`. Upstream copyright notices and licenses remain in the source and app assets.
 
-The current release is **0.1.23-preview (version code24)**. It fixes key-preview lifecycle retention, invisible reused previews and duplicate-parent failures. See the attached `CHECKS.txt` for verification, inherited warnings and qualification limits.
+The current release is **0.1.24-preview (version code25)**. It releases original/transformed selection-text references when capitalization stops, is disabled, or input finishes. See the attached `CHECKS.txt` for verification, inherited warnings and qualification limits.
 
-Verified:30 JVM tests,97 Android17/API37 integration tests and21 selected Android10/API29 tests. Physical-phone, live speech, live TalkBack/Switch Access, Android15/16 runtime and native sanitizer checks were not rerun for this APK. ARM32 device testing is excluded at the user's request.
+Verified:30 JVM tests,102 Android17/API37 integration tests and26 selected Android10/API29 tests. Physical-phone, live speech, live TalkBack/Switch Access, Android15/16 runtime and native sanitizer checks were not rerun for this APK. ARM32 device testing is excluded at the user's request. Numeric-only typing-dispatch and cold settings-start observations are diagnostic debug-emulator measurements, not phone performance qualification. Battery/thermal testing was not performed.
 
 ## Obtainium
 
