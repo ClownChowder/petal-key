@@ -1,24 +1,24 @@
 # Petal Key
 
-Offline English-US Android keyboard for Android10 and newer. Works inside existing messaging and other apps. Optional voice typing uses Android's on-device recognizer only. No Internet permission, analytics, advertising, cloud inference or automatic typed-text persistence.
+Offline English-US Android keyboard for Android 10 and newer. Works inside existing messaging and other apps. Optional voice typing uses Android's on-device recognizer only. No INTERNET permission, analytics, advertising, cloud inference or automatic typed-text persistence.
 
-Download the APK and full corresponding source ZIP from [Releases](https://github.com/ClownChowder/petal-key/releases). This repository indexes personal previews; GitHub's automatic source archives are not the app source. Use the explicitly attached `petal-key-source.zip`. Original copyright notices and licenses remain in the source and app assets.
+Current personal preview: **0.1.26-preview (version code 27)**. Adds **Typing → Popup letters on keypress** and enables preview control at every screen size. Existing saved choices are preserved; if previews were off, turn the switch on. Password and other protected fields still hide previews. Long-press alternatives are separate.
 
-Current preview: **0.1.25-preview (version code26)**. Fixes native coordinate bounds, cancellation, stale tools previews, ended-session text/suggestion references and late batch callbacks after canceled/replaced gestures.
+Download `petal-key.apk` from [the verified preview](https://github.com/ClownChowder/petal-key/releases/tag/v0.1.26-preview). The complete corresponding source, tests, Gradle wrapper and licenses are attached as `petal-key-source.zip`; no overlay is needed. This repository indexes releases. GitHub automatic source archives contain only this index, not the app source.
 
-**Automated Android runtime checks passed on the exact published APK:** Android 10 and 17 each passed 109 tests; Android 15 and 16 each passed 22 focused tests. Android 17 used 16 KB pages. Disposable x86_64 emulators used synthetic editors; final keyboard settings were restored exactly. No personal phone was used or microphone granted. Initial test-readiness and factory-settings failures, test/tool repairs, APK/test identities and limits are documented in `RUNTIME-CHECKS.txt`. Apply `RUNTIME-TEST-SOURCE.zip` over the original source ZIP for those test/tool-only updates; application production inputs and APK are unchanged. `RUNTIME-SHA256SUMS` covers the public assets.
+Verified on the exact offered APK: **111/111 automated tests on each of Android 10, 15, 16 and 17** using disposable x86_64 emulators and synthetic editors. Android 17 used 16 KB pages. Final runs verified installed APK hashes and restored keyboard settings exactly. No personal phone was used; microphone permission remained denied and no audio was recorded. Fresh host builds, 35 JVM tests per debug/release variant, native/callback regressions, packaged privacy/signature/alignment and theme/resource checks passed. Lint has zero errors and unchanged inherited findings: 223 debug/222 release warnings and one hint each.
 
-Fresh host checks passed 35 JVM tests per debug/release variant, 10 callback cases, 10 native sanitizer cases, builds, packaged privacy/signature/native alignment and theme/resource checks. Lint has zero errors; 223 debug/222 release inherited warnings and one hint each remain. `CHECKS.txt` preserves the initial host assessment. Physical ARM64 devices, live TalkBack/Switch Access, speech recognition, physical performance/power/thermal measurements and comprehensive low-storage/process-death recovery remain unqualified. ARM32 runtime testing stays excluded.
+See attached `CHECKS.txt` and `SHA256SUMS` for identities, exact checks and limits. Physical ARM64 devices, live TalkBack/Switch Access, actual speech recognition, physical performance/power/thermal measurements and comprehensive low-storage/process-death recovery remain unqualified. ARM32 runtime testing remains excluded.
 
 ## Obtainium
 
-- Source:`https://github.com/ClownChowder/petal-key`
-- APK filename filter:`^petal-key\.apk$`
-- Android package:`app.petalkey.inputmethod.latin`
-- Signing certificate SHA-256:`386f097ea7de3749f0b0cc87e433d0f8a8a70cebb1848d7e7cb4bd5f60cff2b4`
+- Source: `https://github.com/ClownChowder/petal-key`
+- APK filename filter: `^petal-key\.apk$`
+- Android package: `app.petalkey.inputmethod.latin`
+- Signing certificate SHA-256: `386f097ea7de3749f0b0cc87e433d0f8a8a70cebb1848d7e7cb4bd5f60cff2b4`
 
-The signing identity matches previous published previews. These are debug-signed personal previews, not production-signed store releases. Obtainium detects published releases; it does not develop or build new versions. Signing keys, saved API keys, pairing tokens, personal app data and raw test logs are not published. Checksums are attached.
+The signing identity matches previous previews. This is a debug-signed personal preview, not a production-signed store release. Obtainium detects published releases; it does not build new versions. Signing keys, API keys, pairing tokens, personal data, device settings and raw logs are not published.
 
 ## Original authors and credits
 
-See [CREDITS.txt](CREDITS.txt) for original authors, upstream projects, recording/model creators and applicable licenses. Original license and copyright notices remain in corresponding source archives and app assets. No upstream endorsement is implied.
+See [CREDITS.txt](CREDITS.txt) for original authors, upstream projects and applicable licenses. Original copyright and license notices remain in the source archive and app assets. No upstream endorsement is implied.
