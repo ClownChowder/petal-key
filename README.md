@@ -6,7 +6,7 @@ Current personal **Preview:0.1.33-preview (version code34)**. Fixes first-phrase
 
 Completed phrases stay only in memory (10000-character cap). The existing one-minute safety limit requests Stop;final results have a five-second deadline,then only completed phrases are inserted. A missing provider callback can lose the unfinished final phrase. A15-second silence hint is requested but provider-dependent;there may be brief listening gaps during restart. The panel shows Resuming until a real ready callback;waveform follows actual provider levels. Android12+ installed on-device English support required. No audio/transcript files,cloud fallback,downloads or new permissions.
 
-Download `petal-key.apk` from [the verified preview](https://github.com/ClownChowder/petal-key/releases/tag/v0.1.33-preview). Complete corresponding source/tests/build files/licenses:`petal-key-source.zip`. Automatic GitHub archives contain only this release index.
+Download `petal-key.apk` from [the verified preview](https://github.com/FourWags/petal-key/releases/tag/v0.1.33-preview). Complete corresponding source/tests/build files/licenses:`petal-key-source.zip`. Automatic GitHub archives contain only this release index.
 
 Verified exact APK:**33/33 focused tests each Android10,15,16,17 x86_64 emulator** (132executions),plus37 JVM tests per debug/release variant. New regressions cover pauses/multiple phrases,duplicate/retired callbacks,Stop/Cancel between attempts,protected-field interruption,safety cap/finalization fallback,text bounds and timer/buffer cleanup. Existing checks cover both QWERTY sizes,18themes,automated accessibility,waveform/lifecycle,editing and settings. Exact app/test hashes matched;IME settings restored. Fake speech engines/synthetic text,no microphone grants/audio. Android17 uses16KB pages.
 
@@ -18,7 +18,7 @@ Verified previews are GitHub Latest for Obtainium discovery while retaining prev
 
 ## Obtainium
 
-- Source: `https://github.com/ClownChowder/petal-key`
+- Source: `https://github.com/FourWags/petal-key`
 - APK filename filter: `^petal-key\.apk$`
 - Android package: `app.petalkey.inputmethod.latin`
 - Signing certificate SHA-256: `386f097ea7de3749f0b0cc87e433d0f8a8a70cebb1848d7e7cb4bd5f60cff2b4`
