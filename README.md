@@ -1,18 +1,18 @@
 # Petal Key
 
-Offline English-US Android keyboard for Android 10+. No INTERNET permission, analytics, advertising, cloud inference, runtime downloads or automatic typed-text persistence.
+Offline English-US Android keyboard for Android 10+. No INTERNET permission, analytics, advertising, cloud inference, runtime downloads or typed-text persistence.
 
-Current personal **Preview: 0.1.31-preview (version code 32)**. Adds Standard Light and Standard Dark (18 themes total), matching neutral launcher icons and the approved speech bubble with three rounded sound bars for voice typing across all themes. Existing16 palette values,40 legacy selections/launcher vectors, keycap shapes and preferences are preserved. New saved IDs40/41 are appended; no settings reset. Offline waveform and hold-to-talk behavior remain unchanged.
+Current personal **Preview: 0.1.32-preview (version code 33)**. Tap the speech bubble once to start voice typing, then tap again to stop. Space stays unchanged. The waveform/status panel remains inside the keyboard window, with Stop and Cancel controls. Both QWERTY sizes and all18 themes share the same action. Saved settings are preserved.
 
-Download `petal-key.apk` from [the verified preview](https://github.com/ClownChowder/petal-key/releases/tag/v0.1.31-preview). Complete corresponding source/tests/Gradle wrapper/licenses: `petal-key-source.zip`. This repository indexes releases; GitHub automatic source archives contain only this index.
+Download `petal-key.apk` from [the verified preview](https://github.com/ClownChowder/petal-key/releases/tag/v0.1.32-preview). Complete corresponding source/tests/build files/licenses: `petal-key-source.zip`. This repository indexes releases; GitHub automatic archives contain only this index.
 
-Verified exact APK: **29/29 focused tests on each Android 10, 15, 16 and 17 x86_64 emulator** (116 executions). Fake recognizers and synthetic editors only; no microphone grants/audio. Renders all18 themes, checks actual keycap/edge/background and matching launcher colors, voice icon silhouette/tint/label in both QWERTY sizes, every theme/alias selection and migration, plus relative level boundaries, release/end/cancel/stale callbacks, 24 repeated sessions per emulator across regular/large QWERTY, accessibility/panel bounds, protected fields, lifecycle cancellation, screen-touch hold/release and settings. Installed app/test hashes matched and keyboard settings were restored. Android 17 uses 16 KB pages.
+Verified exact APK: **30/30 focused tests on each Android10,15,16,17 x86_64 emulator** (120 executions), plus37 JVM tests per debug/release variant. Includes real injected two-tap touches in both sizes using fake engines,18 themes,automated accessibility,protected fields,cancellation/late callbacks,waveform lifecycle,panel bounds and settings preservation. App/test hashes matched; keyboard settings restored. No microphone grants or audio recording. Android17 uses16KB pages.
 
-Fresh debug/release builds, 37 JVM tests per variant, packaged privacy/signature/alignment, runner safety and theme/resource checks passed. Lint: zero errors, 222 debug/221 release inherited warnings and one hint each; no new issue identities. `CHECKS.txt` and `SHA256SUMS` contain exact identities, initial attempts (including an icon antialias comparison refinement), final results and limits.
+Fresh host builds, packaged privacy/signature/alignment, source integrity/secret-pattern scan, runner safety and theme/resource checks passed. Lint:zero errors,222 debug/221 release inherited warnings plus one hint each; no new finding identities. `CHECKS.txt` and `SHA256SUMS` bind exact assets, initial attempts, final results and limits.
 
-Provider RMS callbacks are not guaranteed by Android; status messages still work when levels are unavailable. Relative waveform is not a calibrated sound meter. Physical-phone waveform/real-provider behavior, the full 123-test typing suite, live TalkBack/Switch Access, native sanitizer/callback suites and physical performance/power/thermal were not qualified in this update. No personal-phone installation or settings changes. ARM32 runtime testing remains excluded.
+**Limits:**physical-phone two-tap speech and real-provider behavior,live TalkBack/Switch Access,full123-test typing suite,native sanitizer/callback suites,physical performance/battery/thermal and comprehensive recovery were not rerun for this update. Existing narrow-QWERTY target limits remain. No phone installation/settings changes. ARM32 runtime stays excluded. On-device English recognition requires Android12+ and installed offline support; no cloud fallback/model downloads. RMS callbacks are provider-dependent; the waveform is a relative indicator.
 
-Verified previews are marked GitHub Latest for Obtainium's default filters while retaining preview names and honest limits. Latest is distribution metadata, not production qualification.
+Verified previews are marked GitHub Latest for Obtainium default filters while retaining preview names and honest limits. Latest is distribution metadata, not production qualification.
 
 ## Obtainium
 
