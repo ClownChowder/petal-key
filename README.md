@@ -1,18 +1,20 @@
 # Petal Key
 
-Offline English-US Android keyboard for Android 10+. No INTERNET permission, analytics, advertising, cloud inference, runtime downloads or typed-text persistence.
+Offline English-US Android keyboard for Android10+. No INTERNET permission,analytics,advertising,cloud inference,runtime downloads or typed-text persistence.
 
-Current personal **Preview: 0.1.32-preview (version code 33)**. Tap the speech bubble once to start voice typing, then tap again to stop. Space stays unchanged. The waveform/status panel remains inside the keyboard window, with Stop and Cancel controls. Both QWERTY sizes and all18 themes share the same action. Saved settings are preserved.
+Current personal **Preview:0.1.33-preview (version code34)**. Fixes first-phrase shutdown in tap-to-talk:normal final results/no-match/speech-timeout keep the bounded dictation session open and resume on-device recognition after a pause. Tap the speech bubble again or Stop to insert completed phrases once;Cancel discards them. Space and saved settings stay unchanged.
 
-Download `petal-key.apk` from [the verified preview](https://github.com/ClownChowder/petal-key/releases/tag/v0.1.32-preview). Complete corresponding source/tests/build files/licenses: `petal-key-source.zip`. This repository indexes releases; GitHub automatic archives contain only this index.
+Completed phrases stay only in memory (10000-character cap). The existing one-minute safety limit requests Stop;final results have a five-second deadline,then only completed phrases are inserted. A missing provider callback can lose the unfinished final phrase. A15-second silence hint is requested but provider-dependent;there may be brief listening gaps during restart. The panel shows Resuming until a real ready callback;waveform follows actual provider levels. Android12+ installed on-device English support required. No audio/transcript files,cloud fallback,downloads or new permissions.
 
-Verified exact APK: **30/30 focused tests on each Android10,15,16,17 x86_64 emulator** (120 executions), plus37 JVM tests per debug/release variant. Includes real injected two-tap touches in both sizes using fake engines,18 themes,automated accessibility,protected fields,cancellation/late callbacks,waveform lifecycle,panel bounds and settings preservation. App/test hashes matched; keyboard settings restored. No microphone grants or audio recording. Android17 uses16KB pages.
+Download `petal-key.apk` from [the verified preview](https://github.com/ClownChowder/petal-key/releases/tag/v0.1.33-preview). Complete corresponding source/tests/build files/licenses:`petal-key-source.zip`. Automatic GitHub archives contain only this release index.
 
-Fresh host builds, packaged privacy/signature/alignment, source integrity/secret-pattern scan, runner safety and theme/resource checks passed. Lint:zero errors,222 debug/221 release inherited warnings plus one hint each; no new finding identities. `CHECKS.txt` and `SHA256SUMS` bind exact assets, initial attempts, final results and limits.
+Verified exact APK:**33/33 focused tests each Android10,15,16,17 x86_64 emulator** (132executions),plus37 JVM tests per debug/release variant. New regressions cover pauses/multiple phrases,duplicate/retired callbacks,Stop/Cancel between attempts,protected-field interruption,safety cap/finalization fallback,text bounds and timer/buffer cleanup. Existing checks cover both QWERTY sizes,18themes,automated accessibility,waveform/lifecycle,editing and settings. Exact app/test hashes matched;IME settings restored. Fake speech engines/synthetic text,no microphone grants/audio. Android17 uses16KB pages.
 
-**Limits:**physical-phone two-tap speech and real-provider behavior,live TalkBack/Switch Access,full123-test typing suite,native sanitizer/callback suites,physical performance/battery/thermal and comprehensive recovery were not rerun for this update. Existing narrow-QWERTY target limits remain. No phone installation/settings changes. ARM32 runtime stays excluded. On-device English recognition requires Android12+ and installed offline support; no cloud fallback/model downloads. RMS callbacks are provider-dependent; the waveform is a relative indicator.
+Fresh builds,packaged privacy/exported guards/backup exclusions,signer/alignment,source integrity/secret-pattern scan,runner safety and resource/theme checks passed. Lint:zero errors,222debug/221release inherited warnings and1hint each;no new finding identities. CHECKS.txt and SHA256SUMS bind final assets and distinguish initial attempts from final results. Regression first failed on0.1.32,which immediately inserted the first phrase and ended dictation.
 
-Verified previews are marked GitHub Latest for Obtainium default filters while retaining preview names and honest limits. Latest is distribution metadata, not production qualification.
+**Limits:**physical-phone pause/restart timing/real speech,live TalkBack/Switch Access,full typing suite,native sanitizer/callback suites,physical performance/power/thermal and comprehensive recovery not rerun/qualified for this update. Existing narrow-QWERTY target limits remain. No phone access/install/settings changes. ARM32 runtime excluded.
+
+Verified previews are GitHub Latest for Obtainium discovery while retaining preview names and honest limits. Latest is distribution metadata,not production qualification.
 
 ## Obtainium
 
