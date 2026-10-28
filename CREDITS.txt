@@ -1,4 +1,4 @@
-Petal Key preview contains modified OpenBoard code from:
+Sumi preview contains modified OpenBoard code from:
 https://github.com/openboard-team/openboard
 Revision c3772cd56e770975ea5570db903f93b199de8b32
 
@@ -21,6 +21,6 @@ are open-source platform libraries, not cloud or analytics SDKs. JSR-305 is a
 compile-only annotation dependency and is not shipped as a runtime library.
 JUnit and AndroidX Test are development-only test dependencies.
 
-Petal Key vector icons and the two bundled Bloom/Wave GIF animations were created
+Sumi vector icons and the two bundled Bloom/Wave GIF animations were created
 for this project. They are new interpretations of the supplied design direction,
 not recovered production assets. Preview sheets are supplied beside this project.
