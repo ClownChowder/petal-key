@@ -1,4 +1,4 @@
-# Petal Key
+# Sumi
 
 Offline English-US Android keyboard for Android10+. No INTERNET permission,analytics,advertising,cloud inference,runtime downloads or typed-text persistence.
 
